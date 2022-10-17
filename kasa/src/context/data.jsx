@@ -1,4 +1,4 @@
-const products = [
+[
   {
     id: 'c67ab8a7',
     title: 'Appartement cosy',
@@ -578,6 +578,4 @@ const products = [
     ],
     tags: ['Louvre', 'Marais', 'Rivoli'],
   },
-]
-
-export default products
+];
