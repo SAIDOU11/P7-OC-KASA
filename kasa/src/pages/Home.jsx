@@ -1,9 +1,8 @@
-import { useContext } from 'react'
-import { AppContext } from '../context/context'
+import { useGlobalContext } from '../context/context'
 
 export function Home() {
-  const context = useContext(AppContext)
-  console.log(context)
+  const context = useGlobalContext()
+  console.log({ context })
 
   return (
     <div>
