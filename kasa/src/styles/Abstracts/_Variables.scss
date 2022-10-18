@@ -1,0 +1,53 @@
+$salmon-color-1: #ff6060;
+
+$breakpoints: (
+  'phone': 260px,
+  'tablet': 768px,
+  'desktop': 992px,
+  'LGdesktop': 1200px,
+);
+
+@mixin phone {
+  @media (min-width: map-get($breakpoints, phone)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+@mixin LGdesktop {
+  @media (min-width: map-get($breakpoints, LGdesktop)) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 0) {
+  @media (min-width: 0) {
+    @content;
+  }
+}
+
+.responsive-test {
+  @include phone {
+    background-color: red;
+  }
+  @include tablet {
+    background-color: blue;
+  }
+  @include desktop {
+    background-color: yellow;
+  }
+  @include LGdesktop {
+    background-color: pink;
+  }
+}
