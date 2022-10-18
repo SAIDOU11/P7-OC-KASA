@@ -17,10 +17,3 @@ export default function App() {
     </BrowserRouter>
   )
 }
-
-//
-//{
-/* <Routes>
-      
-    </Routes> */
-//}
