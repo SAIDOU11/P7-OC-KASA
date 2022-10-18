@@ -1,22 +1,18 @@
-import React, { useContext, useEffect } from 'react'
-import DataProducts from './data.json'
+import React, { useContext } from 'react'
+import products from './data.json'
 
 const AppContext = React.createContext()
 
 // React.createContext() Récupere (Provider & Consumer) AppContext.Provider AppContext.Consumer
 
 const AppProvider = ({ children }) => {
-  console.log(DataProducts)
-
-  useEffect(() => {
-    console.log('fetch data here')
-  }, [])
+  console.log(products)
 
   return (
-    <AppContext.Provider value={{ id: 'c67ab8a7', title: 'Appartement cosy' }}>
+    <AppContext.Provider value={"Hello I'm the provider value"}>
       <div>
         {children}
-        <h1>{DataProducts[0].title}</h1>
+        <h1>{products[0].title}</h1>
       </div>
     </AppContext.Provider>
   )
