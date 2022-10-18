@@ -1,7 +1,7 @@
 export function Home() {
   return (
     <div>
-      <h1 className="responsive-test">Page Home 🏠</h1>
+      <h1>Page Home 🏠</h1>
       <p>Bonjour</p>
     </div>
   )

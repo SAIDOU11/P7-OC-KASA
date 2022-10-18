@@ -1,1 +1,37 @@
+@mixin breakpoint($bp: 0) {
+  $size: map-get($breakpoints, $bp);
+  @media (min-width: size) {
+    @content;
+  }
+}
 
+@mixin phone {
+  @media (min-width: map-get($breakpoints, phone)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+@mixin LGdesktop {
+  @media (min-width: map-get($breakpoints, LGdesktop)) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 0) {
+  $size: map-get($breakpoints, $bp);
+  @media (min-width: size) {
+    @content;
+  }
+}
