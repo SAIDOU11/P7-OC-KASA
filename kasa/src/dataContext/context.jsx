@@ -8,6 +8,10 @@ const AppContext = React.createContext()
 const AppProvider = ({ children }) => {
   console.log(DataProducts)
 
+  useEffect(() => {
+    console.log('fetch data here')
+  }, [])
+
   return (
     <AppContext.Provider value={{ id: 'c67ab8a7', title: 'Appartement cosy' }}>
       <div>

@@ -1,4 +1,4 @@
-import { useGlobalContext } from '../context/context'
+import { useGlobalContext } from '../dataContext/context'
 
 export function Home() {
   const context = useGlobalContext()
