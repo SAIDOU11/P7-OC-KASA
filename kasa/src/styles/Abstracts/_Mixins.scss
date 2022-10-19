@@ -28,10 +28,3 @@
     @content;
   }
 }
-
-@mixin breakpoint($bp: 0) {
-  $size: map-get($breakpoints, $bp);
-  @media (min-width: size) {
-    @content;
-  }
-}

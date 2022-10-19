@@ -3,13 +3,12 @@
 @import './Abstracts/Breakpoints';
 @import './Abstracts/Colors';
 @import './Abstracts/Mixins';
-@import './Abstracts/Responsive-Nav';
 
-// Components
+// Layout
 
-@import './Components/Navbar';
-@import './Components/StyledNavbar';
-@import './Components/Footer';
+@import './Layout/Navbar';
+@import './Layout/StyledNavbar';
+@import './Layout/Footer';
 
 body {
   margin: 0;
