@@ -6,11 +6,7 @@ export default function Navbar() {
     <nav className="navbar ">
       <div>
         <Link to="/">
-          <img
-            src={LOGO}
-            alt="logo kasa"
-            className="navbar__logo responsive-logo"
-          />
+          <img src={LOGO} alt="logo kasa" className="navbar__logo" />
         </Link>
       </div>
 

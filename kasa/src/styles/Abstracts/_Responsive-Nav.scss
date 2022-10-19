@@ -1,14 +1,28 @@
-.responsive-logo {
-  @include phone {
-    height: 35px;
-  }
-  @include tablet {
-    background-color: blue;
-  }
-  @include desktop {
-    background-color: yellow;
-  }
-  @include LGdesktop {
-    height: 68px;
-  }
-}
+// &__logo {
+//   @include phone {
+//     height: 35px;
+//   }
+//   @include tablet {
+//     height: 50px;
+//   }
+//   @include desktop {
+//     height: 68px;
+//   }
+//   @include LGdesktop {
+//     height: 68px;
+//   }
+// }
+
+// .responsive-link {
+//   @include phone {
+//   }
+//   @include tablet {
+//     height: 50px;
+//   }
+//   @include desktop {
+//     height: 68px;
+//   }
+//   @include LGdesktop {
+//     height: 68px;
+//   }
+// }

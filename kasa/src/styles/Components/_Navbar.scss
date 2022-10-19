@@ -7,22 +7,34 @@
   padding-bottom: 0px;
   background-color: rgb(155, 151, 151);
 
-  // &__logo {
-  //   // height: 50px;
-  //   // @include breakpoint(desktop) {
-  //   //   height: 45px;
-  //   // }
-  //   // @include breakpoint(tablet) {
-  //   //   height: 45px;
-  //   // }
-  //   // @include breakpoint(phone) {
-  //   //   height: 45px;
-  //   // }
-  // }
+  &__logo {
+    height: 68px;
+    @include phone {
+      height: 35px;
+    }
+    @include tablet {
+      height: 50px;
+    }
+  }
+
   &__link {
     display: inline;
     color: $salmon-color-1;
 
-    margin-left: 10%;
+    @include phone {
+      margin-left: 1rem;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    @include tablet {
+      font-size: 22px;
+      margin-left: 2rem;
+      text-transform: capitalize;
+    }
+    @include tablet {
+      font-size: 22px;
+      margin-left: 2rem;
+      text-transform: capitalize;
+    }
   }
 }
