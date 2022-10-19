@@ -20,6 +20,7 @@
   &__link {
     display: inline;
     color: $salmon-color-1;
+    text-decoration: none;
 
     @include phone {
       margin-left: 1rem;
