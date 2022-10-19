@@ -10,6 +10,11 @@
 @import './Layout/StyledNavbar';
 @import './Layout/Footer';
 
+// Components
+
+@import './Component/HomeBanner';
+@import './Component/SectionHome';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Montserrat' 'Segoe UI',
@@ -17,7 +22,7 @@ body {
     'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(104, 102, 102);
+  background-color: #fff;
 }
 
 code {

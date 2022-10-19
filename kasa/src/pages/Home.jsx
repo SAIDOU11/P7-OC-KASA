@@ -1,12 +1,13 @@
 export function Home() {
   return (
     <div>
-      <h1>Page Home 🏠</h1>
-      <p>Bonjour</p>
+      <div className="banner-image lowOpacityImage">
+        <div className="container ">
+          <h1 className="text">Chez vous, partout et ailleurs</h1>
+        </div>
+      </div>
+
+      {/* <section className="bcgGray"></section> */}
     </div>
   )
 }
-
-// import { useGlobalContext } from '../dataContext/context'
-//   const context = useGlobalContext()
-//   console.log({ context })

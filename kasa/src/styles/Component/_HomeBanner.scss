@@ -1,0 +1,47 @@
+.banner-image {
+  position: relative;
+  background-image: url('../../images/BANNER.png');
+  background-size: cover;
+  margin: 0 5%;
+  margin-top: 50px; // TEST
+  margin-bottom: 50px; // TEST
+  overflow: hidden;
+  border-radius: 25px;
+
+  @include phone {
+    height: 111px;
+  }
+  @include tablet {
+    height: 190px;
+  }
+  @include desktop {
+    height: 223px;
+  }
+  @include LGdesktop {
+    height: 223px;
+  }
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  font-weight: 500;
+  color: $quaternary-color;
+  @include phone {
+    font-size: 23px;
+  }
+  @include tablet {
+    font-size: 29px;
+  }
+  @include desktop {
+    font-size: 48px;
+  }
+  @include LGdesktop {
+    font-size: 48px;
+  }
+}
