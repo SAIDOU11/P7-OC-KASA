@@ -1,0 +1,13 @@
+.footer {
+  position: relative;
+  height: 209px;
+  width: 100%;
+  background-color: $black-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__paragraph {
+    color: $white-color;
+  }
+}

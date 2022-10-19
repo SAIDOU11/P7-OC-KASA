@@ -5,7 +5,7 @@ export default function StyledNavbar() {
   return (
     <nav className="navbar ">
       <NavLink to="/">
-        <img src={LOGO} alt="logo kasa" className="navbar__logo" />
+        <img src={LOGO} alt="Logo kasa" className="navbar__logo" />
       </NavLink>
       <div>
         <NavLink

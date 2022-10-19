@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './styles/index.scss'
 import StyledNavbar from './components/StyledNavbar'
+import Footer from './components/Footer'
 import { About } from './pages/About'
 import { Home } from './pages/Home'
 import { Product } from './pages/Product'
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/product" element={<Product />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

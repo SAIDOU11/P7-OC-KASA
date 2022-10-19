@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar ">
       <div>
         <Link to="/">
-          <img src={LOGO} alt="logo kasa" className="navbar__logo" />
+          <img src={LOGO} alt="Logo kasa" className="navbar__logo" />
         </Link>
       </div>
 
