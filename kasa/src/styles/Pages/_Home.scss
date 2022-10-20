@@ -1,1 +1,17 @@
-
+.home-page {
+  margin: 0 5%;
+  &__grid {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include LGdesktop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
