@@ -1,6 +1,7 @@
 .banner-image {
   position: relative;
   background-image: url('../../images/BANNER.png');
+  isolation: isolate;
   background-size: cover;
   margin: 0 5%;
   margin-top: 50px; // TEST
@@ -20,28 +21,36 @@
   @include LGdesktop {
     height: 223px;
   }
-}
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  &__text {
+    font-weight: 500;
+    color: $tertiary-color;
+    @include phone {
+      font-size: 23px;
+    }
+    @include tablet {
+      font-size: 29px;
+    }
+    @include desktop {
+      font-size: 48px;
+    }
+    @include LGdesktop {
+      font-size: 48px;
+    }
+  }
 }
 
-.text {
-  font-weight: 500;
-  color: $quaternary-color;
-  @include phone {
-    font-size: 23px;
-  }
-  @include tablet {
-    font-size: 29px;
-  }
-  @include desktop {
-    font-size: 48px;
-  }
-  @include LGdesktop {
-    font-size: 48px;
-  }
+.banner-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: #000;
+  opacity: 0.3;
 }
