@@ -29,19 +29,20 @@
     text-align: center;
   }
   &__text {
+    text-align: left;
     font-weight: 500;
     color: $tertiary-color;
     @include phone {
-      font-size: 23px;
+      font-size: 18px;
     }
     @include tablet {
-      font-size: 29px;
+      font-size: 23px;
     }
     @include desktop {
-      font-size: 48px;
+      font-size: 40px;
     }
     @include LGdesktop {
-      font-size: 48px;
+      font-size: 40px;
     }
   }
 }

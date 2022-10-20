@@ -1,23 +1,25 @@
 // Abstracts .. Utilities
 
-@import './Abstracts/Breakpoints';
-@import './Abstracts/Colors';
-@import './Abstracts/Mixins';
+@import '../Abstracts/Breakpoints';
+@import '../Abstracts/Colors';
+@import '../Abstracts/Mixins';
+
+// Base
+@import './Police';
 
 // Layout
-
-@import './Layout/Navbar';
-@import './Layout/StyledNavbar';
-@import './Layout/Footer';
+@import '../Layout/Navbar';
+@import '../Layout/StyledNavbar';
+@import '../Layout/Footer';
 
 // Components
 
-@import './Component/HomeBanner';
-@import './Component/SectionHome';
+@import '../Component/HomeBanner';
+@import '../Component/SectionHome';
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat' 'Segoe UI',
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;

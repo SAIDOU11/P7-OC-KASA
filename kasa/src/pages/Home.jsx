@@ -7,7 +7,7 @@ export function Home() {
         </div>
       </div>
 
-      {/* <section className="bcgGray"></section> */}
+      <section className="bcgGray"></section>
     </div>
   )
 }
