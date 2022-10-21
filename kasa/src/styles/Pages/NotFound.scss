@@ -1,0 +1,48 @@
+.notfound {
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 450px;
+  @include tablet {
+    height: 350px;
+  }
+}
+
+.container {
+  margin: 0 40px;
+  text-align: center;
+}
+
+.error {
+  margin: 0;
+  @include phone {
+    font-weight: 700;
+    font-size: 96px;
+  }
+  @include tablet {
+    font-weight: 700;
+    font-size: 200px;
+  }
+  @include desktop {
+    font-weight: 700;
+    font-size: 200px;
+  }
+  @include LGdesktop {
+    font-weight: 700;
+    font-size: 200px;
+  }
+}
+
+.paragraph {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.link {
+  color: $primary-color;
+  font-size: 18px;
+  font-weight: 500;
+}
