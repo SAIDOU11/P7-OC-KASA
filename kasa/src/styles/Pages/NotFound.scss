@@ -5,44 +5,48 @@
   align-items: center;
   text-align: center;
   height: 450px;
-  @include tablet {
-    height: 350px;
+  &__container {
+    text-align: center;
+    @include phone {
+      margin-top: 100px;
+    }
+    @include tablet {
+      margin-top: 45px;
+    }
+    @include desktop {
+      margin-top: 40px;
+    }
+    @include LGdesktop {
+      margin-top: 40px;
+    }
   }
-}
-
-.container {
-  margin: 0 40px;
-  text-align: center;
-}
-
-.error {
-  margin: 0;
-  @include phone {
+  &__error {
+    margin: 0;
     font-weight: 700;
-    font-size: 96px;
+    @include phone {
+      font-size: 96px;
+    }
+    @include tablet {
+      font-size: 170px;
+    }
+    @include desktop {
+      font-size: 200px;
+    }
+    @include LGdesktop {
+      font-size: 200px;
+    }
   }
-  @include tablet {
-    font-weight: 700;
-    font-size: 200px;
+  &__paragraph {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    @include phone {
+      font-size: 18px;
+    }
   }
-  @include desktop {
-    font-weight: 700;
-    font-size: 200px;
+  &__link {
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: 500;
   }
-  @include LGdesktop {
-    font-weight: 700;
-    font-size: 200px;
-  }
-}
-
-.paragraph {
-  font-size: 25px;
-  font-weight: 500;
-  margin-bottom: 50px;
-}
-
-.link {
-  color: $primary-color;
-  font-size: 18px;
-  font-weight: 500;
 }
