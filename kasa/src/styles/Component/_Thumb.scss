@@ -2,35 +2,31 @@
   height: 340px;
   width: 340px;
   position: relative;
-  // margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 10px;
   overflow: hidden;
-}
-
-.image {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.covert {
-  position: absolute;
-  top: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-  height: 100%;
-  width: 100%;
-  border-radius: inherit;
-}
-
-.title {
-  position: absolute;
-  bottom: 0;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 20px 20px;
-  color: white;
-  box-sizing: inherit;
+  &__image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  &__covert {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+  }
+  &__title {
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 20px;
+    color: white;
+    box-sizing: inherit;
+  }
 }
