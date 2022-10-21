@@ -1,14 +1,13 @@
 .footer {
   position: absolute;
-  bottom: 0;
   height: 209px;
   width: 100%;
-
   background-color: $secondary-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  bottom: -289px;
   &__paragraph {
     color: $tertiary-color;
   }

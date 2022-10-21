@@ -1,3 +1,8 @@
 export function NotFound() {
-  return <h1 className="title">NOT FOUND 404</h1>
+  return (
+    <div>
+      <h1>NOT FOUND 404</h1>
+      <h4>404</h4>
+    </div>
+  )
 }

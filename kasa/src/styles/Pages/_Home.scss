@@ -1,17 +1,27 @@
 .home-page {
   margin: 0 5%;
-  &__grid {
+  &__flexitem {
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
     @include tablet {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
     @include desktop {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
     @include LGdesktop {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
   }
 }

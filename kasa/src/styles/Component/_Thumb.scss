@@ -2,24 +2,28 @@
   position: relative;
   height: 340px;
   width: 340px;
-  background-color: rgb(29, 27, 27);
+  //background-color: rgb(29, 27, 27);
   border-radius: 10px;
   margin-bottom: 20px;
+  margin-top: 50px;
+
   // animation: fadeInUp 600ms ease-in-out;
   // overflow: hidden;
 }
 
 .image {
   height: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 
 // .covert {
-//   background: linear-gradient(
-//     180deg,
-//     rgba(255, 255, 255, 0) 0%,
-//     rgba(0, 0, 0, 0.5) 100%
-//   );
+//   // background: linear-gradient(
+//   //   180deg,
+//   //   rgba(255, 255, 255, 0) 0%,
+//   //   rgba(0, 0, 0, 0.5) 100%
+//   // );
+//   // width: 100%;
 // }
 
 .title {

@@ -3,7 +3,7 @@ import LOGO from '../images/LOGO.png'
 
 export default function StyledNavbar() {
   return (
-    <nav className="navbar ">
+    <nav className="navbar">
       <NavLink to="/">
         <img src={LOGO} alt="Logo kasa" className="navbar__logo" />
       </NavLink>

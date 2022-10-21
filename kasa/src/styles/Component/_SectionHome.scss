@@ -1,7 +1,20 @@
 .bcgGray {
-  background-color: $quaternary-color;
-  height: 829px;
-  border-radius: 25px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  @include tablet {
+    background-color: $quaternary-color;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @include desktop {
+    background-color: $quaternary-color;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @include LGdesktop {
+    background-color: $quaternary-color;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }

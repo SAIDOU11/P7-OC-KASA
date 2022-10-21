@@ -12,7 +12,7 @@ export function Home() {
         </div>
       </div>
       <div>
-        <section className="bcgGray home-page__grid">
+        <section className="bcgGray home-page__flexitem">
           {products.map((product) => {
             return (
               <article key={product.id}>
