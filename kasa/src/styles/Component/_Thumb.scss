@@ -1,31 +1,36 @@
 .thumb {
-  position: relative;
   height: 340px;
   width: 340px;
-  //background-color: rgb(29, 27, 27);
+  position: relative;
+  // margin-top: 50px;
+  margin-bottom: 50px;
   border-radius: 10px;
-  margin-bottom: 20px;
-  margin-top: 50px;
-
-  // animation: fadeInUp 600ms ease-in-out;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 .image {
+  position: relative;
   height: 100%;
   width: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
-// .covert {
-//   // background: linear-gradient(
-//   //   180deg,
-//   //   rgba(255, 255, 255, 0) 0%,
-//   //   rgba(0, 0, 0, 0.5) 100%
-//   // );
-//   // width: 100%;
-// }
+.covert {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
 
 .title {
-  color: $tertiary-color;
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 20px;
+  color: white;
+  box-sizing: inherit;
 }
