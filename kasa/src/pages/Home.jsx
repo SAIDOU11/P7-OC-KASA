@@ -16,7 +16,7 @@ export function Home() {
           {products.map((product) => {
             return (
               <article key={product.id}>
-                <Link to={`/products/${product.id}`}>
+                <Link to={`/product/${product.id}`}>
                   <Thumb cover={product.cover} title={product.title} />
                 </Link>
               </article>

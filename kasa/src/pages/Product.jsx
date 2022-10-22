@@ -7,12 +7,11 @@ export function Product() {
   const { productId } = useParams()
 
   const product = products.find((product) => product.id === productId)
-
+  const { title, location, rating, host, equipments, description, pictures } =
+    product
   return (
     <div>
-      <h1>Page Produit unique 1️⃣</h1>
-
-      <p>Produit</p>
+      <h1>{title}</h1>
     </div>
   )
 }
