@@ -9,9 +9,11 @@ export function Product() {
   const { title, location, rating, host, equipments, description, pictures } =
     product
   return (
-    <div>
+    <div className="product">
       <ImageSlider slides={pictures} />
-      <h1>Page Product</h1>
+      <div>
+        <h1>{title}</h1>
+      </div>
     </div>
   )
 }

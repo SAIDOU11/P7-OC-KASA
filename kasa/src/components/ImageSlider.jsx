@@ -40,6 +40,11 @@ export function ImageSlider({ slides }) {
           <div className="nextStyle" onClick={goToNext}>
             <img src={RightArrow} alt="" className="nextStyle__next" />
           </div>
+          <div>
+            <p className="lengthSlide">
+              {currentIndex + 1}/{length}
+            </p>
+          </div>
         </>
       ) : null}
     </div>

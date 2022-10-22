@@ -6,7 +6,6 @@
     transition: transform 300ms;
     height: inherit;
     width: inherit;
-
     @include phone {
       height: 255px;
     }
@@ -21,7 +20,8 @@
     }
   }
   &__Inactive {
-    transform: scale(1.05);
+    transform: scale(1.02);
+
     transition: transform 300ms;
   }
   &__picture {
@@ -74,5 +74,18 @@
     @include desktop {
       height: 75px;
     }
+  }
+}
+
+.lengthSlide {
+  display: none;
+  @include desktop {
+    display: block;
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    font-weight: 500;
+    left: 50%;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
   }
 }
