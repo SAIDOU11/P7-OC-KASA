@@ -1,24 +1,78 @@
 .ImageSlider {
   margin: 0 5%;
-  @include phone {
-    height: 255px;
-  }
-  @include tablet {
-    height: 315px;
-  }
-  @include desktop {
-    height: 500px;
-  }
-}
-
-.StyleSlide {
   position: relative;
-  height: 100%;
-  width: 100%;
+  &__Active {
+    transform: scale(1);
+    transition: transform 300ms;
+    height: inherit;
+    width: inherit;
+
+    @include phone {
+      height: 255px;
+    }
+    @include tablet {
+      height: 315px;
+    }
+    @include desktop {
+      height: 500px;
+    }
+    @include LGdesktop {
+      height: 500px;
+    }
+  }
+  &__Inactive {
+    transform: scale(1.05);
+    transition: transform 300ms;
+  }
+  &__picture {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+  }
 }
 
-.picture {
-  height: 100%;
-  width: 100%;
-  border-radius: 25px;
+.previousStyle {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 2%;
+
+  &__previous {
+    @include phone {
+      height: 25px;
+    }
+    @include tablet {
+      height: 45px;
+    }
+    @include desktop {
+      height: 75px;
+    }
+    @include desktop {
+      height: 75px;
+    }
+  }
+}
+
+.nextStyle {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 2%;
+
+  &__next {
+    @include phone {
+      height: 25px;
+    }
+    @include tablet {
+      height: 45px;
+    }
+    @include desktop {
+      height: 75px;
+    }
+    @include desktop {
+      height: 75px;
+    }
+  }
 }
