@@ -1,9 +1,8 @@
 import { useParams } from 'react-router-dom'
 import products from '../dataContext/data.json'
+import { ImageSlider } from '../components/ImageSlider'
 
 export function Product() {
-  console.log(products)
-
   const { productId } = useParams()
 
   const product = products.find((product) => product.id === productId)
@@ -11,7 +10,8 @@ export function Product() {
     product
   return (
     <div>
-      <h1>{title}</h1>
+      <ImageSlider slides={pictures} />
+      <h1>Page Product</h1>
     </div>
   )
 }

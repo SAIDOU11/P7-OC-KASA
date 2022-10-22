@@ -17,11 +17,14 @@
 @import '../Component/HomeBanner';
 @import '../Component/SectionHome';
 @import '../Component/Thumb';
+@import '../Component/ImageSlider.scss';
 
 // Pages
 
 @import '../Pages/Home';
 @import '../Pages/NotFound';
+
+// ****
 
 body {
   min-height: 100%;

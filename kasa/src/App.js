@@ -12,7 +12,7 @@ export default function App() {
     <BrowserRouter>
       <StyledNavbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" index element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/product/:productId" element={<Product />}></Route>
         <Route path="*" element={<NotFound />}></Route>
