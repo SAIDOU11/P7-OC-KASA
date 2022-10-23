@@ -6,6 +6,10 @@
   justify-content: space-between;
   align-items: center;
 }
+.tags {
+  display: flex;
+  flex-direction: row;
+}
 
 .host {
   display: flex;

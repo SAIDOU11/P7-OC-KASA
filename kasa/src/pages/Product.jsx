@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import products from '../dataContext/data.json'
 import { ImageSlider } from '../components/ImageSlider'
+import Tag from '../components/Tag'
 
 export function Product() {
   const { productId } = useParams()
@@ -23,6 +24,11 @@ export function Product() {
         <div className="info">
           <h1>{title}</h1>
           <p>{location}</p>
+          <div className="tags">
+            {product.tags.map((tag, index) => (
+              <Tag key={index} useTag={tag} />
+            ))}
+          </div>
         </div>
         <div className="host">
           <p className="host__name">{host.name}</p>
