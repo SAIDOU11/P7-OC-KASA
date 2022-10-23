@@ -1,4 +1,23 @@
 .product {
   margin: 0 5%;
   color: $primary-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.host {
+  display: flex;
+  flex-direction: row;
+  &__name {
+    font-size: 18px;
+    margin: 1em;
+  }
+  &__profile {
+    object-fit: cover;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+  }
 }

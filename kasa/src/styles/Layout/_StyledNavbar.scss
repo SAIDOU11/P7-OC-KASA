@@ -1,4 +1,45 @@
-.active {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  &__logo {
+    height: 68px;
+    @include phone {
+      height: 35px;
+    }
+    @include tablet {
+      height: 50px;
+    }
+  }
+
+  &__link {
+    display: inline;
+    color: $primary-color;
+    text-decoration: none;
+
+    @include phone {
+      margin-left: 1rem;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    @include tablet {
+      font-size: 22px;
+      margin-left: 2rem;
+      text-transform: capitalize;
+    }
+    @include desktop {
+      font-size: 22px;
+      margin-left: 2rem;
+      text-transform: capitalize;
+    }
+  }
+}
+
+a.active {
   font-weight: 500;
   text-decoration: underline;
 }

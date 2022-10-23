@@ -7,21 +7,11 @@ export default function StyledNavbar() {
       <NavLink to="/">
         <img src={LOGO} alt="Logo kasa" className="navbar__logo" />
       </NavLink>
-      <div>
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive ? 'active navbar__link' : 'navbar__link '
-          }
-        >
+      <div className="navbar__link">
+        <NavLink to="/" end className="navbar__link">
           Accueil
         </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive ? 'active navbar__link' : 'navbar__link'
-          }
-        >
+        <NavLink to="/about" className="navbar__link">
           A Propos
         </NavLink>
       </div>

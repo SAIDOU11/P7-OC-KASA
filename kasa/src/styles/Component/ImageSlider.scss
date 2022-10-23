@@ -1,6 +1,7 @@
 .ImageSlider {
   margin: 0 5%;
   position: relative;
+  margin-bottom: 20px;
   &__Active {
     transform: scale(1);
     transition: transform 300ms;

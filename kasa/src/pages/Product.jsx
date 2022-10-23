@@ -6,13 +6,28 @@ export function Product() {
   const { productId } = useParams()
 
   const product = products.find((product) => product.id === productId)
-  const { title, location, rating, host, equipments, description, pictures } =
-    product
+  const {
+    title,
+    location,
+    rating,
+    host,
+    tags,
+    equipments,
+    description,
+    pictures,
+  } = product
   return (
-    <div className="product">
+    <div>
       <ImageSlider slides={pictures} />
-      <div>
-        <h1>{title}</h1>
+      <div className="product">
+        <div className="info">
+          <h1>{title}</h1>
+          <p>{location}</p>
+        </div>
+        <div className="host">
+          <p className="host__name">{host.name}</p>
+          <img src={host.picture} alt="profile" className="host__profile"></img>
+        </div>
       </div>
     </div>
   )
