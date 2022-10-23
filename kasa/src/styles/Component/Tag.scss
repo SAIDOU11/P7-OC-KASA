@@ -2,24 +2,29 @@
   background: $primary-color;
   border-radius: 10px;
   color: white;
-  padding: 3px 10px;
+  padding: 0 10px;
   margin-top: 10px;
   min-width: 68px;
   text-align: center;
+  align-items: center;
   @include phone {
-    margin-right: 10px;
-    margin-bottom: 20px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    min-width: 50px;
   }
   @include tablet {
     margin-right: 2rem;
+    min-width: 60px;
     margin-bottom: 2rem;
   }
   @include desktop {
     margin-right: 2rem;
+    min-width: 68px;
     margin-bottom: 2rem;
   }
   @include LGdesktop {
     margin-right: 2rem;
+    min-width: 68px;
     margin-bottom: 2rem;
   }
   &__text {

@@ -1,0 +1,48 @@
+.host {
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 20px;
+  @include phone {
+    justify-content: space-between;
+  }
+  @include tablet {
+    justify-content: flex-end;
+  }
+  @include desktop {
+    justify-content: flex-end;
+  }
+  @include LGdesktop {
+    justify-content: flex-end;
+  }
+}
+
+.fullName {
+  font-weight: 500;
+  margin: 0;
+  margin-right: 10px;
+  justify-content: center;
+  @include phone {
+    font-size: 16px;
+  }
+  @include phone {
+    font-size: 16px;
+  }
+  @include desktop {
+    font-size: 18px;
+  }
+  @include LGdesktop {
+    font-size: 18px;
+  }
+}
+
+.fullName p {
+  margin: 0;
+  text-align: end;
+}
+
+.picture {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}

@@ -1,0 +1,23 @@
+.rating {
+  display: flex;
+  align-items: center;
+
+  &__star {
+    @include phone {
+      height: 15px;
+      margin-right: 5px;
+    }
+    @include tablet {
+      height: 24px;
+      margin-right: 5px;
+    }
+    @include desktop {
+      height: 30px;
+      margin-right: 5px;
+    }
+    @include LGdesktop {
+      height: 30px;
+      margin-right: 5px;
+    }
+  }
+}

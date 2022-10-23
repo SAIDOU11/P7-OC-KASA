@@ -2,21 +2,15 @@ import { useParams } from 'react-router-dom'
 import products from '../dataContext/data.json'
 import { ImageSlider } from '../components/ImageSlider'
 import Tag from '../components/Tag'
+import Rating from '../components/Rating'
+import Host from '../components/Host'
 
 export function Product() {
   const { productId } = useParams()
 
   const product = products.find((product) => product.id === productId)
-  const {
-    title,
-    location,
-    rating,
-    host,
-    tags,
-    equipments,
-    description,
-    pictures,
-  } = product
+  const { title, location, rating, host, equipments, description, pictures } =
+    product
   return (
     <div>
       <ImageSlider slides={pictures} />
@@ -30,9 +24,10 @@ export function Product() {
             ))}
           </div>
         </div>
-        <div className="host">
-          <p className="host__name">{host.name}</p>
-          <img src={host.picture} alt="profile" className="host__profile"></img>
+
+        <div className="Right">
+          <Host host={host} />
+          <Rating rating={rating} />
         </div>
       </div>
     </div>
