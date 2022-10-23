@@ -15,34 +15,31 @@
   @include LGdesktop {
     justify-content: flex-end;
   }
-}
-
-.fullName {
-  font-weight: 500;
-  margin: 0;
-  margin-right: 10px;
-  justify-content: center;
-  @include phone {
-    font-size: 16px;
+  &__fullName {
+    font-weight: 500;
+    margin: 0;
+    margin-right: 10px;
+    justify-content: center;
+    @include phone {
+      font-size: 16px;
+    }
+    @include phone {
+      font-size: 16px;
+    }
+    @include desktop {
+      font-size: 18px;
+    }
+    @include LGdesktop {
+      font-size: 18px;
+    }
   }
-  @include phone {
-    font-size: 16px;
+  &__fullName p {
+    margin: 0;
+    text-align: end;
   }
-  @include desktop {
-    font-size: 18px;
+  &__picture {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
   }
-  @include LGdesktop {
-    font-size: 18px;
-  }
-}
-
-.fullName p {
-  margin: 0;
-  text-align: end;
-}
-
-.picture {
-  height: 64px;
-  width: 64px;
-  border-radius: 50%;
 }

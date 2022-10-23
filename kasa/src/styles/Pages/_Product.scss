@@ -1,68 +1,86 @@
 .product {
   margin: 0 5%;
   color: $primary-color;
+  &__container {
+    margin-top: 20px;
 
-  align-items: center;
-  @include phone {
-    display: flex;
-    flex-direction: column;
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include LGdesktop {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    }
   }
-  @include tablet {
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    @include phone {
+      font-size: 18px;
+    }
+    @include tablet {
+      font-size: 24px;
+    }
+    @include desktop {
+      font-size: 30px;
+    }
+    @include LGdesktop {
+      font-size: 30px;
+    }
+  }
+  &__paragraph {
+    @include phone {
+      font-size: 16px;
+    }
+    @include tablet {
+      font-size: 18px;
+    }
+    @include desktop {
+      font-size: 20px;
+    }
+    @include LGdesktop {
+      font-size: 20px;
+    }
+  }
+  &__tags {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  &__hostRating {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
     justify-content: space-between;
-  }
-  @include desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  @include LGdesktop {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-}
-.tags {
-  display: flex;
-  flex-direction: row;
-}
 
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
-.Right {
-  margin: 0;
-
-  @include phone {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  @include tablet {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  @include desktop {
-    width: 15%;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
-  }
-  @include LGdesktop {
-    width: 15%;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
+    @include phone {
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+    @include tablet {
+      margin: 0;
+      flex-direction: column;
+    }
+    @include desktop {
+      margin: 0;
+      flex-direction: column;
+    }
+    @include LGdesktop {
+      margin: 0;
+      flex-direction: column;
+    }
   }
 }

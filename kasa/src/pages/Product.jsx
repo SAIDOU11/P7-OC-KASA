@@ -12,20 +12,20 @@ export function Product() {
   const { title, location, rating, host, equipments, description, pictures } =
     product
   return (
-    <div>
+    <div className="product">
       <ImageSlider slides={pictures} />
-      <div className="product">
-        <div className="info">
-          <h1>{title}</h1>
-          <p>{location}</p>
-          <div className="tags">
+      <div className="product__container">
+        <div className="product__info">
+          <h1 className="product__title">{title}</h1>
+          <p className="product__paragraph">{location}</p>
+          <div className="product__tags">
             {product.tags.map((tag, index) => (
               <Tag key={index} useTag={tag} />
             ))}
           </div>
         </div>
 
-        <div className="Right">
+        <div className="product__hostRating">
           <Host host={host} />
           <Rating rating={rating} />
         </div>

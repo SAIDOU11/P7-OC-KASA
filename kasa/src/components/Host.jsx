@@ -4,12 +4,12 @@ export default function Host({ host }) {
 
   return (
     <div className="host">
-      <div className="fullName">
-        <p className="firstName">{name.trim()}</p>
-        <p className="lastName">{lastname.trim()}</p>
+      <div className="host__fullName">
+        <p className="host__firstName">{name.trim()}</p>
+        <p className="host__lastName">{lastname.trim()}</p>
       </div>
 
-      <img src={host.picture} alt="" className="picture" />
+      <img src={host.picture} alt="" className="host__picture" />
     </div>
   )
 }

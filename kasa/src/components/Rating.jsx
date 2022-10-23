@@ -17,7 +17,7 @@ export default function Rating({ rating }) {
         ) : (
           <img
             key={star.toString()}
-            className="rating__icon"
+            className="rating__star"
             src={GreyStar}
             alt=""
           />

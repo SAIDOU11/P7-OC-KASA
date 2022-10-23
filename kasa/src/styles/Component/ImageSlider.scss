@@ -1,5 +1,4 @@
 .ImageSlider {
-  margin: 0 5%;
   position: relative;
   margin-bottom: 20px;
   &__Active {
@@ -22,7 +21,6 @@
   }
   &__Inactive {
     transform: scale(1.02);
-
     transition: transform 300ms;
   }
   &__picture {
