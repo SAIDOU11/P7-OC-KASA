@@ -1,0 +1,39 @@
+.container-about__image {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+  object-fit: inherit;
+  isolation: isolate;
+  background-size: cover;
+  overflow: hidden;
+  @include phone {
+    height: 255px;
+
+    background-image: url('../../images/AboutPhone.png');
+  }
+  @include tablet {
+    height: 190px;
+
+    background-image: url('../../images/AboutBanner.png');
+  }
+  @include desktop {
+    height: 223px;
+
+    background-image: url('../../images/AboutBanner.png');
+  }
+  @include LGdesktop {
+    height: 223px;
+
+    background-image: url('../../images/AboutBanner.png');
+  }
+}
+
+.container-about__image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: #000;
+  opacity: 0.3;
+}

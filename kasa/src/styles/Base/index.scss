@@ -22,8 +22,10 @@
 @import '../Component/Host';
 @import '../Component/Rating';
 @import '../Component/Collapsible';
+@import '../Component/AboutBanner';
 
 // Pages
+@import '../Pages/About';
 @import '../Pages/Home';
 @import '../Pages/Product';
 @import '../Pages/NotFound';

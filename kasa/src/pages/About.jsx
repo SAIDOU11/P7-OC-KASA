@@ -1,8 +1,20 @@
+import FiabilityCollaps from '../components/FiabilityCollaps'
+import RespectCollaps from '../components/RespectCollaps'
+import ServiceCollaps from '../components/ServiceCollaps'
+import SecurityCollaps from '../components/SecurityCollaps'
+
 export function About() {
   return (
-    <div>
-      <h1>Page About 💁</h1>
-      <p>Bonjour</p>
+    <div className="about-page">
+      <div className="container-about">
+        <div className="container-about__image "></div>
+      </div>
+      <div className="collaps-items">
+        <FiabilityCollaps />
+        <RespectCollaps />
+        <ServiceCollaps />
+        <SecurityCollaps />
+      </div>
     </div>
   )
 }

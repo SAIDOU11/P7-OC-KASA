@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import products from '../dataContext/data.json'
-
 import Thumb from '../components/Thumb'
 
 export function Home() {
