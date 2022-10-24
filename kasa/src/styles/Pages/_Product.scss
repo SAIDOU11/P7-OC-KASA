@@ -1,6 +1,7 @@
 .product {
   margin: 0 5%;
   color: $primary-color;
+  margin-bottom: 50px;
   &__container {
     margin-top: 20px;
 
@@ -81,6 +82,26 @@
     @include LGdesktop {
       margin: 0;
       flex-direction: column;
+    }
+  }
+  &__collapsible {
+    @include phone {
+      display: flex;
+      flex-direction: column;
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 40px;
+    }
+    @include LGdesktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 40px;
     }
   }
 }

@@ -4,6 +4,7 @@ import { ImageSlider } from '../components/ImageSlider'
 import Tag from '../components/Tag'
 import Rating from '../components/Rating'
 import Host from '../components/Host'
+import Collapsible from '../components/Collapsible'
 
 export function Product() {
   const { productId } = useParams()
@@ -29,6 +30,10 @@ export function Product() {
           <Host host={host} />
           <Rating rating={rating} />
         </div>
+      </div>
+      <div className="product__collapsible">
+        <Collapsible title="Description" content={description} />
+        <Collapsible title="Équipement" content={equipments} />
       </div>
     </div>
   )
