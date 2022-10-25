@@ -10,3 +10,18 @@
   padding: 15px;
   margin-bottom: 45px;
 }
+
+.collaps-items {
+  @include phone {
+    margin: 0;
+  }
+  @include tablet {
+    margin: 0 10%;
+  }
+  @include desktop {
+    margin: 0 10%;
+  }
+  @include LGdesktop {
+    margin: 0 10%;
+  }
+}
