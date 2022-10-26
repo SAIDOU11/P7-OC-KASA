@@ -7,6 +7,7 @@
   isolation: isolate;
   background-size: cover;
   overflow: hidden;
+  margin-bottom: 100px;
   @include phone {
     height: 255px;
 
@@ -19,7 +20,6 @@
   }
   @include desktop {
     height: 223px;
-
     background-image: url('../../images/AboutBanner.png');
   }
   @include LGdesktop {

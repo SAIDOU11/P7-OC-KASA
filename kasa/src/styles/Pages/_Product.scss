@@ -4,6 +4,7 @@
   margin-bottom: 50px;
   &__container {
     margin-top: 20px;
+    margin-bottom: 20px;
 
     @include phone {
       display: flex;
@@ -72,8 +73,8 @@
       align-items: center;
     }
     @include tablet {
-      margin: 0;
-      flex-direction: column;
+      flex-direction: row-reverse;
+      align-items: center;
     }
     @include desktop {
       margin: 0;
@@ -90,6 +91,7 @@
       flex-direction: column;
     }
     @include tablet {
+      margin: 0 10%;
       display: flex;
       flex-direction: column;
     }

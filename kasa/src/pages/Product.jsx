@@ -5,11 +5,16 @@ import Tag from '../components/Tag'
 import Rating from '../components/Rating'
 import Host from '../components/Host'
 import Collapsible from '../components/Collapsible'
+import { NotFound } from './NotFound'
 
 export function Product() {
   const { productId } = useParams()
 
   const product = products.find((product) => product.id === productId)
+  if (!product) {
+    return <NotFound />
+  }
+
   const { title, location, rating, host, equipments, description, pictures } =
     product
   return (
