@@ -8,6 +8,8 @@
 
 #### Start
 
+- cd kasa
+
 - npm start
 
 Runs the app in the development mode.
