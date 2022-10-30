@@ -26,4 +26,3 @@ export function Home() {
     </div>
   )
 }
-//  {products[0].title}
