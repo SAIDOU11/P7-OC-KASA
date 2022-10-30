@@ -1,19 +1,19 @@
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import LOGO from '../images/LOGO.png'
 
 export default function StyledNavbar() {
   return (
     <nav className="navbar">
-      <NavLink to="/">
+      <Link to="/">
         <img src={LOGO} alt="Logo kasa" className="navbar__logo" />
-      </NavLink>
+      </Link>
       <div className="navbar__link">
-        <NavLink to="/" end className="navbar__link">
+        <Link to="/" end className="navbar__link">
           Accueil
-        </NavLink>
-        <NavLink to="/about" className="navbar__link">
+        </Link>
+        <Link to="/about" className="navbar__link">
           A Propos
-        </NavLink>
+        </Link>
       </div>
     </nav>
   )
