@@ -1,7 +1,3 @@
-// import FiabilityCollaps from '../components/FiabilityCollaps'
-// import RespectCollaps from '../components/RespectCollaps'
-// import ServiceCollaps from '../components/ServiceCollaps'
-// import SecurityCollaps from '../components/SecurityCollaps'
 import Collapsible from '../components/Collapsible'
 
 export function About() {
